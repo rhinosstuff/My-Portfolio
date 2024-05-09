@@ -1,29 +1,9 @@
-# Bootcamp Portfolio
+# My Portfolio
 
 ## Description
-For this project, I needed to create a portfolio from scratch, with no starter code. I was given free control over content and layout as long as I met certain Acceptance Criteria.
+I will be updating this as I go through bootcamp.
 
-## Acceptance Criteria
-
-Here are the requirements necessary to satisfy this weeks challenge:
-
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
-
-<a href="https://rhinosstuff.github.io/Bootcamp-Portfolio/">This is a link to my deployed webpage</a>
+<a href="https://rhinosstuff.github.io/My-Portfolio/">This is a link to my deployed webpage</a>
 
 ## Image Sources
 
