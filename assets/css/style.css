@@ -1,0 +1,230 @@
+:root {
+  --header: #4A4238;
+  --light: #F7F7FF;
+  --navlink-color: #E6AA68;
+  --side-text: #80AB82;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+header {
+  display: flex;
+  align-items: flex-end;
+  
+  padding: 0 0.65rem 0 0.65rem;
+  
+  background-color: var(--header);
+}
+
+header img {
+  width: 6.5rem;
+  
+  margin: 0.65rem;
+  border-radius: 50%;
+}
+
+header h2 {
+  margin: 0.65rem;
+  padding: 0.65rem;
+  
+  color: var(--light);
+  font-size: 2rem;
+}
+
+nav {
+  flex-grow: 1;
+  margin: 0.65rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem; 
+}
+
+nav a {
+  color: var(--navlink-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+.banner { 
+  height: 13rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  align-self: flex-end;
+  
+  background-color: #E6AA68;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: .75rem .75rem .75rem #4A4238; 
+  
+  color: white;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+section h2 {
+  min-width: 10rem;
+  max-width: 13rem;
+
+  padding-right: 1rem;
+  border-right: black 3px solid;
+  
+  color: var(--side-text);  
+  font-size: 2rem;
+  text-align: right;
+}
+
+#about-me p {
+  margin: 1rem 1rem 1rem 1rem;
+  line-height: 1.5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.card { 
+  min-width: 20rem;
+  min-height: 20rem;
+
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem gray;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.first-card {
+  width: 100%;
+  height: 25rem;
+  
+  background-image: url("../images/light-bulb.jpg");
+}
+
+.second-card {
+  background-image: url("../images/ai.jpg");
+}
+
+.third-card {
+  background-image: url("../images/matrix.jpg");
+}
+
+.fourth-card {
+  background-image: url("../images/board.jpg");
+}
+
+.tag-container {
+  position: absolute;
+  bottom: 1rem;
+
+  padding: 0.65rem;
+  box-shadow: 0.5rem 0.5rem 1rem black;
+  border-radius: 0 1rem 1rem 0;
+
+  background-color: var(--header);
+
+  color: var(--light);
+  text-align: left;
+}
+
+.tag-container h4 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer p {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* Centered content and stacked cards at 650px or smaller */
+@media screen and (max-width: 650px) {
+ 
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    flex-direction: column;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  section h2 {
+    max-width: 100%;
+  
+    margin: 0 1rem 0 1rem;
+    padding: 0 0 1rem 0;
+    border-right: 0;
+    border-bottom: black 3px solid;
+    
+    text-align: center;
+  }
+
+  .h2-break {
+    display: none;
+  }
+
+  .banner { 
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card { 
+    width: 100%;
+    min-width: 0;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    padding: 0.5rem;
+  }
+}
